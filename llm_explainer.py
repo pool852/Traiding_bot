@@ -94,8 +94,6 @@ async def generate_explanation(indicators: dict, timeframe: str, symbol: str = "
 - MA Summary: {indicators.get('MA_summary')} (Покупка: {indicators.get('MA_buy')}, Продажа: {indicators.get('MA_sell')})
 - Свечные сигналы: {indicators.get('candles')}
 - Тренд: {indicators.get('trend')}
-- SuperTrend: {indicators.get('SuperTrend')}
-- PSAR: {indicators.get('PSAR')}
 """
 
     try:
@@ -137,8 +135,6 @@ async def generate_short_comment(indicators: dict, timeframe: str, symbol: str =
 - EMA(50): {indicators.get('EMA50')}
 - Объём: {indicators.get('volume')}
 - Тренд: {indicators.get('trend')}
-- SuperTrend: {indicators.get('SuperTrend')}
-- PSAR: {indicators.get('PSAR')}
 """
     try:
         response = await asyncio.get_event_loop().run_in_executor(
@@ -181,8 +177,6 @@ async def generate_direction_and_probability(indicators: dict, timeframe: str, s
 - Свечные сигналы: {indicators.get('candles')}
 - Тренд: {indicators.get('trend')}
 - Объём: {indicators.get('volume')}
-- SuperTrend: {indicators.get('SuperTrend')}
-- PSAR: {indicators.get('PSAR')}
 """
     try:
         response = await asyncio.get_event_loop().run_in_executor(
@@ -230,8 +224,6 @@ def build_full_forecast_prompt(symbol: str, indicators_15m: dict, indicators_1h:
 - MA Summary: {indicators_15m.get('MA_summary')} (Покупка: {indicators_15m.get('MA_buy')}, Продажа: {indicators_15m.get('MA_sell')})
 - Свечные сигналы: {indicators_15m.get('candles')}
 - Тренд: {indicators_15m.get('trend')}
-- SuperTrend: {indicators_15m.get('SuperTrend')}
-- PSAR: {indicators_15m.get('PSAR')}
 
 1 час:
 - Итоговый сигнал: {indicators_1h.get('final_signal')}
@@ -246,8 +238,6 @@ def build_full_forecast_prompt(symbol: str, indicators_15m: dict, indicators_1h:
 - MA Summary: {indicators_1h.get('MA_summary')} (Покупка: {indicators_1h.get('MA_buy')}, Продажа: {indicators_1h.get('MA_sell')})
 - Свечные сигналы: {indicators_1h.get('candles')}
 - Тренд: {indicators_1h.get('trend')}
-- SuperTrend: {indicators_1h.get('SuperTrend')}
-- PSAR: {indicators_1h.get('PSAR')}
 
 4 часа:
 - Итоговый сигнал: {indicators_4h.get('final_signal')}
@@ -262,8 +252,6 @@ def build_full_forecast_prompt(symbol: str, indicators_15m: dict, indicators_1h:
 - MA Summary: {indicators_4h.get('MA_summary')} (Покупка: {indicators_4h.get('MA_buy')}, Продажа: {indicators_4h.get('MA_sell')})
 - Свечные сигналы: {indicators_4h.get('candles')}
 - Тренд: {indicators_4h.get('trend')}
-- SuperTrend: {indicators_4h.get('SuperTrend')}
-- PSAR: {indicators_4h.get('PSAR')}
 """
 
 async def generate_full_forecast(symbol: str, indicators_15m: dict, indicators_1h: dict, indicators_4h: dict) -> str:

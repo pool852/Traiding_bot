@@ -382,20 +382,23 @@ def get_forecast(symbol: str, interval: str) -> Dict[str, Any]:
         indicators["signal_reason"] = trade_sig['reason']
         indicators["probability"] = trade_sig.get('probability', 0)
         indicators["prob_direction"] = trade_sig.get('prob_direction', 'Нейтрально')
+        # Формируем текст анализа
+        analysis_lines = [
+            f"• Рекомендация: {r}",
+            f"• Seven days: {seven_days_signal}",
+            f"• RSI: {rsi}",
+            f"• MACD: {macd}",
+            f"• Объём: {volume}",
+            f"• Stoch RSI: {stoch_rsi}",
+            f"• EMA(50/100/200): {ema_50} / {ema_100} / {ema_200}",
+            f"• MA Summary: {ma_summary} ({ma_buy} Buy / {ma_sell} Sell)",
+            f"• Текущий тренд: {trend}"
+        ]
+        
+
+        
         return {
-            "text": (
-                f"• Рекомендация: {r}\n"
-                f"• Seven days: {seven_days_signal}\n"
-                f"• RSI: {rsi}\n"
-                f"• MACD: {macd}\n"
-                f"• Объём: {volume}\n"
-                f"• Stoch RSI: {stoch_rsi}\n"
-                f"• EMA(50/100/200): {ema_50} / {ema_100} / {ema_200}\n"
-                f"• MA Summary: {ma_summary} ({ma_buy} Buy / {ma_sell} Sell)\n"
-                f"• SuperTrend: {indicators.get('SuperTrend', '—')}\n"
-                f"• PSAR: {indicators.get('PSAR', '—')}\n"
-                f"• Текущий тренд: {trend}"
-            ),
+            "text": '\n'.join(analysis_lines),
             "indicators": indicators
         }
     except Exception as e:
