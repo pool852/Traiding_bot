@@ -163,7 +163,9 @@ async def generate_short_comment(indicators: dict, timeframe: str, symbol: str =
 async def generate_direction_and_probability(indicators: dict, timeframe: str, symbol: str = "BTCUSDT") -> str:
     readable_tf = translate_timeframe(timeframe)
     prompt = f"""
-На основе этих индикаторов для {symbol} на таймфрейме {readable_tf} оцени, куда с большей вероятностью пойдёт цена (только ЛОНГ или ШОРТ) и укажи процент уверенности (например: ЛОНГ 68%). Не добавляй других пояснений, только направление и процент.
+На основе этих индикаторов для {symbol} на таймфрейме {readable_tf} оцени, куда с большей вероятностью пойдёт цена. 
+
+ВАЖНО: Ответь ТОЛЬКО в формате "ЛОНГ XX%" или "ШОРТ XX%" где XX - процент уверенности от 50 до 95.
 
 Индикаторы:
 - Итоговый сигнал: {indicators.get('final_signal')}
@@ -188,7 +190,7 @@ async def generate_direction_and_probability(indicators: dict, timeframe: str, s
             lambda: client.chat.completions.create(
                 model="mistralai/Mixtral-8x7B-Instruct-v0.1",
                 messages=[
-                    {"role": "system", "content": "Ты эксперт по криптоанализу. На основе индикаторов оцени только направление (ЛОНГ или ШОРТ) и процент уверенности. Не добавляй других пояснений, только направление и процент. Пиши на русском."},
+                    {"role": "system", "content": "Ты эксперт по криптоанализу. Отвечай СТРОГО в формате 'ЛОНГ XX%' или 'ШОРТ XX%' где XX - процент от 50 до 95. Никаких других слов или пояснений."},
                     {"role": "user", "content": prompt.strip()}
                 ],
                 temperature=0.5,

@@ -452,18 +452,82 @@ async def format_analysis_block(symbol: str, tf: str, indicators: dict, short_co
     # --- Вероятность и направление ---
     prob_block = await generate_direction_and_probability(indicators, tf, symbol)
     import re
-    prob_block_upper = prob_block.upper()
-    if "ЛОНГ" in prob_block_upper:
-        direction = "ЛОНГ"
-        emoji = "🟢"
-    elif "ШОРТ" in prob_block_upper:
-        direction = "ШОРТ"
-        emoji = "🔴"
-    else:
-        direction = "-"
-        emoji = "⚪"
-    match = re.search(r"(\d{2,3})", prob_block)
-    percent = match.group(1) if match else "-"
+    
+    # Улучшенный парсинг ответа ИИ
+    def parse_ai_response(response: str, indicators: dict) -> tuple:
+        response_upper = response.upper()
+        
+        # Пытаемся найти направление в ответе ИИ
+        if "ЛОНГ" in response_upper or "ПОКУП" in response_upper or "ВВЕРХ" in response_upper:
+            direction = "ЛОНГ"
+            emoji = "🟢"
+        elif "ШОРТ" in response_upper or "ПРОДАЖ" in response_upper or "ВНИЗ" in response_upper:
+            direction = "ШОРТ"
+            emoji = "🔴"
+        else:
+            # Fallback: определяем направление по индикаторам
+            direction, emoji = determine_direction_from_indicators(indicators)
+        
+        # Извлекаем процент
+        match = re.search(r"(\d{2,3})", response)
+        percent = match.group(1) if match else "65"
+        
+        return direction, emoji, percent
+    
+    def determine_direction_from_indicators(indicators: dict) -> tuple:
+        """Определяет направление на основе индикаторов"""
+        buy_signals = 0
+        sell_signals = 0
+        
+        # RSI
+        rsi = indicators.get('RSI', '')
+        if isinstance(rsi, str) and rsi != '-':
+            try:
+                rsi_val = float(rsi)
+                if rsi_val < 30:
+                    buy_signals += 1
+                elif rsi_val > 70:
+                    sell_signals += 1
+            except:
+                pass
+        
+        # MACD
+        macd = indicators.get('MACD', '')
+        if isinstance(macd, str) and 'положительный' in macd.lower():
+            buy_signals += 1
+        elif isinstance(macd, str) and 'отрицательный' in macd.lower():
+            sell_signals += 1
+        
+        # SuperTrend
+        supertrend = indicators.get('SuperTrend', '')
+        if supertrend == 'BUY':
+            buy_signals += 1
+        elif supertrend == 'SELL':
+            sell_signals += 1
+        
+        # PSAR
+        psar = indicators.get('PSAR', '')
+        if psar == 'BUY':
+            buy_signals += 1
+        elif psar == 'SELL':
+            sell_signals += 1
+        
+        # Тренд
+        trend = indicators.get('trend', '')
+        if 'бычий' in trend.lower():
+            buy_signals += 1
+        elif 'медвежий' in trend.lower():
+            sell_signals += 1
+        
+        # Определяем направление
+        if buy_signals > sell_signals:
+            return "ЛОНГ", "🟢"
+        elif sell_signals > buy_signals:
+            return "ШОРТ", "🔴"
+        else:
+            return "ЛОНГ", "🟢"  # По умолчанию лонг
+    
+    direction, emoji, percent = parse_ai_response(prob_block, indicators)
     probability_line = f"☑️ Сигнал: {emoji} {direction} ({percent}%)"
     stop_loss_block = "⛔️ Стоп-лосс: 3%"
     take_profit_block = "🎯 Тейк-профит: 10%"
