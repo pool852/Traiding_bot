@@ -443,6 +443,8 @@ async def format_analysis_block(symbol: str, tf: str, indicators: dict, short_co
             f"Trade volume: {indicators.get('volume', '-')}\n"
             f"Stoch RSI: {indicators.get('StochRSI', '-')}\n"
             f"EMA(50/100/200): {ema50} / {ema100} / {ema200}\n"
+            f"SuperTrend: {indicators.get('SuperTrend', '-')}\n"
+            f"PSAR: {indicators.get('PSAR', '-')}\n"
             f"Текущий тренд: {indicators.get('trend', '-')}"
         )
     indicators_block = build_indicators_block(symbol, indicators)
