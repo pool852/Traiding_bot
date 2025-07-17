@@ -1,10 +1,9 @@
 import os
 import logging
-from aiogram import Bot, Dispatcher
 from dotenv import load_dotenv
 load_dotenv()
-from utils import main_menu, symbols
 
+# Проверка переменных окружения
 API_TOKEN = os.getenv("BOT_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
@@ -18,9 +17,6 @@ if not API_TOKEN:
     raise ValueError("Переменная окружения BOT_TOKEN не задана!")
 if not OPENAI_API_KEY:
     raise ValueError("Переменная окружения OPENAI_API_KEY не задана!")
-
-bot = Bot(token=API_TOKEN)
-dp = Dispatcher(bot)
 
 from handlers import *
 

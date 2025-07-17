@@ -1,6 +1,5 @@
 import mplfinance as mpf
 import pandas as pd
-import matplotlib.pyplot as plt
 import os
 import requests
 from typing import List, Optional

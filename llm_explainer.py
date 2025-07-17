@@ -1,6 +1,5 @@
 import os
 from openai import OpenAI
-from openai.types.chat import ChatCompletionMessageParam
 from dotenv import load_dotenv
 import logging
 import asyncio

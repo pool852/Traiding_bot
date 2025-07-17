@@ -1,7 +1,6 @@
 import logging
 from tradingview_ta import TA_Handler, Interval
 from llm_explainer import generate_explanation
-import time
 import pandas as pd
 try:
     import pandas_ta as ta
@@ -234,23 +233,6 @@ def smart_trade_signal(indicators: dict, price=None, support=None, resistance=No
         stop_loss = max(stop_loss, price*0.005)
         take_profit = stop_loss*2
     return {'signal': signal, 'leverage': leverage, 'stop_loss': stop_loss, 'take_profit': take_profit, 'reason': '', 'probability': probability, 'prob_direction': prob_direction}
-
-def format_float(value):
-    try:
-        if value is None:
-            return "-"
-        if isinstance(value, (int, float)):
-            return f"{value:.2f}"
-        # Иногда TradingView возвращает строку с числом
-        if isinstance(value, str):
-            try:
-                fval = float(value)
-                return f"{fval:.2f}"
-            except Exception:
-                return value
-        return str(value)
-    except Exception:
-        return "-"
 
 def get_forecast(symbol: str, interval: str) -> Dict[str, Any]:
     """

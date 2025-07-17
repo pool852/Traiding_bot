@@ -1,7 +1,7 @@
 from aiogram import types
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InputFile, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardRemove
 from services import get_forecast, generate_signal, safe_generate_explanation, get_support_resistance
-from utils import main_menu, markup, user_state, symbols
+from utils import user_state, symbols
 from bot_init import bot, dp
 import logging
 import os
@@ -425,28 +425,6 @@ async def generate_general_summary(symbol: str, indicators_15m: dict, indicators
         else:
             rec = emoji_line('4ч', dir_4h, prob_4h) + ". Сигналы равны, ориентируйтесь на этот таймфрейм."
     return '\n'.join(lines) + '\n' + rec
-
-def generate_trade_recommendation(indicators: dict) -> str:
-    """
-    Формирует торговую рекомендацию на основе всех индикаторов (включая ATR, SuperTrend, PSAR).
-    Возвращает только тело рекомендации (без заголовка и предупреждения).
-    """
-    prob = indicators.get("probability", 0)
-    prob_dir = indicators.get("prob_direction", "Нейтрально")
-    leverage = indicators.get("leverage", 5)
-
-    if prob_dir == "Лонг":
-        direction_text = "Вверх (лонг)"
-    elif prob_dir == "Шорт":
-        direction_text = "Вниз (шорт)"
-    else:
-        direction_text = "Нейтрально"
-
-    rec = f"Вероятность движения: {direction_text} с вероятностью {int(prob)}%\n"
-    rec += f"Стоп-лосс: 3%\n"
-    rec += f"Тейк-профит: 10%\n"
-    rec += f"Кредитное плечо: от 5 до 10"
-    return rec
 
 # format_analysis_block — структура: аналитика, индикаторы, краткий вывод, ОДИН заголовок "Торговая рекомендация:", тело рекомендации, ОДНО предупреждение, ссылка
 
