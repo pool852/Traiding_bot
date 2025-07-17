@@ -1,0 +1,45 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Виртуальное окружение
+venv/
+env/
+.venv/
+
+# Логи
+*.log
+bot.log
+logs/
+
+# Графики (будут создаваться в контейнере)
+*.png
+*.jpg
+*.jpeg
+charts/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Тестовые файлы
+test_*.png
+*.test
+
+# Временные файлы
+*.tmp
+*.temp 

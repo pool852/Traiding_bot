@@ -1,7 +1,6 @@
 import logging
 from tradingview_ta import TA_Handler, Interval
 from llm_explainer import generate_explanation
-import time
 import pandas as pd
 try:
     import pandas_ta as ta
@@ -154,6 +153,18 @@ def smart_trade_signal(indicators: dict, price=None, support=None, resistance=No
             votes.append('BUY')
         elif volume < avg_volume:
             votes.append('SELL')
+    # SuperTrend
+    supertrend = indicators.get('SuperTrend')
+    if supertrend == 'BUY':
+        votes.append('BUY')
+    elif supertrend == 'SELL':
+        votes.append('SELL')
+    # PSAR
+    psar = indicators.get('PSAR')
+    if psar == 'BUY':
+        votes.append('BUY')
+    elif psar == 'SELL':
+        votes.append('SELL')
     # --- Фильтры по тренду ---
     if trend and 'Медвежий' in trend and votes.count('BUY') > 0:
         return {'signal': 'HOLD', 'leverage': 0, 'stop_loss': None, 'take_profit': None, 'reason': 'Бычий сигнал на медвежьем рынке'}
@@ -200,6 +211,26 @@ def smart_trade_signal(indicators: dict, price=None, support=None, resistance=No
         elif volume < avg_volume:
             short_votes += 1
             last_vote = 'Шорт'
+    # SuperTrend
+    supertrend = indicators.get('SuperTrend')
+    if supertrend == 'BUY':
+        total_votes += 1
+        long_votes += 1
+        last_vote = 'Лонг'
+    elif supertrend == 'SELL':
+        total_votes += 1
+        short_votes += 1
+        last_vote = 'Шорт'
+    # PSAR
+    psar = indicators.get('PSAR')
+    if psar == 'BUY':
+        total_votes += 1
+        long_votes += 1
+        last_vote = 'Лонг'
+    elif psar == 'SELL':
+        total_votes += 1
+        short_votes += 1
+        last_vote = 'Шорт'
     # --- Итоговый сигнал ---
     buy_votes = votes.count('BUY')
     sell_votes = votes.count('SELL')
@@ -234,23 +265,6 @@ def smart_trade_signal(indicators: dict, price=None, support=None, resistance=No
         stop_loss = max(stop_loss, price*0.005)
         take_profit = stop_loss*2
     return {'signal': signal, 'leverage': leverage, 'stop_loss': stop_loss, 'take_profit': take_profit, 'reason': '', 'probability': probability, 'prob_direction': prob_direction}
-
-def format_float(value):
-    try:
-        if value is None:
-            return "-"
-        if isinstance(value, (int, float)):
-            return f"{value:.2f}"
-        # Иногда TradingView возвращает строку с числом
-        if isinstance(value, str):
-            try:
-                fval = float(value)
-                return f"{fval:.2f}"
-            except Exception:
-                return value
-        return str(value)
-    except Exception:
-        return "-"
 
 def get_forecast(symbol: str, interval: str) -> Dict[str, Any]:
     """
@@ -378,6 +392,8 @@ def get_forecast(symbol: str, interval: str) -> Dict[str, Any]:
                 f"• Stoch RSI: {stoch_rsi}\n"
                 f"• EMA(50/100/200): {ema_50} / {ema_100} / {ema_200}\n"
                 f"• MA Summary: {ma_summary} ({ma_buy} Buy / {ma_sell} Sell)\n"
+                f"• SuperTrend: {indicators.get('SuperTrend', '—')}\n"
+                f"• PSAR: {indicators.get('PSAR', '—')}\n"
                 f"• Текущий тренд: {trend}"
             ),
             "indicators": indicators

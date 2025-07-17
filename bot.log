@@ -10274,3 +10274,27 @@ Traceback (most recent call last):
 asyncio.exceptions.TimeoutError
 2025-07-17 23:10:31,689 | INFO | Stop polling...
 2025-07-17 23:10:31,709 | WARNING | Goodbye!
+2025-07-18 02:08:57,948 | INFO | [STARTUP] Бот запущен
+2025-07-18 02:08:58,179 | INFO | Bot: Техно Будда [@tehnobudda_bot]
+2025-07-18 02:08:58,286 | WARNING | Updates were skipped successfully.
+2025-07-18 02:08:58,287 | INFO | Start polling.
+2025-07-18 02:09:10,918 | INFO | [START] Пользователь 1099411068 начал работу
+2025-07-18 02:09:15,362 | INFO | [SYMBOL] Пользователь 1099411068 выбрал SOLUSDT
+2025-07-18 02:09:16,626 | INFO | [ANALYSIS] Запрос анализа SOLUSDT @ 15m
+2025-07-18 02:09:16,904 | INFO | INDICATORS: {'Recommend.Other': 0.09090909090909091, 'Recommend.All': 0.5121212121212121, 'Recommend.MA': 0.9333333333333333, 'RSI': 56.224575010291474, 'RSI[1]': 54.687830018659575, 'Stoch.K': 71.89218921892196, 'Stoch.D': 75.23213461242496, 'Stoch.K[1]': 60.93129729178199, 'Stoch.D[1]': 72.71167271377766, 'CCI20': 61.59300609986057, 'CCI20[1]': 67.16798578318047, 'ADX': 17.72837357450115, 'ADX+DI': 20.521733981095252, 'ADX-DI': 24.17387744076681, 'ADX+DI[1]': 21.42689477253944, 'ADX-DI[1]': 25.24012486687205, 'AO': 1.8426764705878327, 'AO[1]': 1.9077352941172876, 'Mom': 2.5200000000000102, 'Mom[1]': 2.740000000000009, 'MACD.macd': 0.49912732383873504, 'MACD.signal': 0.34158983580071467, 'Rec.Stoch.RSI': 0, 'Stoch.RSI.K': 65.23534096584638, 'Rec.WR': 0, 'W.R': -26.89768976897681, 'Rec.BBPower': 1, 'BBPower': 0.6484318439451613, 'Rec.UO': 0, 'UO': 54.44107680870699, 'close': 175.77, 'EMA5': 175.72448958171069, 'SMA5': 175.97199999999992, 'EMA10': 175.45257695421515, 'SMA10': 175.612, 'EMA20': 174.99013519866375, 'SMA20': 174.78199999999975, 'EMA30': 174.75983144162672, 'SMA30': 174.2546666666669, 'EMA50': 174.4578377875015, 'SMA50': 174.63980000000006, 'EMA100': 173.41064283036846, 'SMA100': 173.79739999999998, 'EMA200': 171.0143129389343, 'SMA200': 170.36145, 'Rec.Ichimoku': 0, 'Ichimoku.BLine': 174.37, 'Rec.VWMA': 1, 'VWMA': 174.80760492321872, 'Rec.HullMA9': 1, 'HullMA9': 175.75625925925928, 'Pivot.M.Classic.S3': 141.39999999999998, 'Pivot.M.Classic.S2': 155.89, 'Pivot.M.Classic.S1': 164.76, 'Pivot.M.Classic.Middle': 170.38, 'Pivot.M.Classic.R1': 179.25, 'Pivot.M.Classic.R2': 184.87, 'Pivot.M.Classic.R3': 199.36, 'Pivot.M.Fibonacci.S3': 155.89, 'Pivot.M.Fibonacci.S2': 161.42517999999998, 'Pivot.M.Fibonacci.S1': 164.84482, 'Pivot.M.Fibonacci.Middle': 170.38, 'Pivot.M.Fibonacci.R1': 175.91518, 'Pivot.M.Fibonacci.R2': 179.33482, 'Pivot.M.Fibonacci.R3': 184.87, 'Pivot.M.Camarilla.S3': 169.64525, 'Pivot.M.Camarilla.S2': 170.9735, 'Pivot.M.Camarilla.S1': 172.30175, 'Pivot.M.Camarilla.Middle': 170.38, 'Pivot.M.Camarilla.R1': 174.95825, 'Pivot.M.Camarilla.R2': 176.2865, 'Pivot.M.Camarilla.R3': 177.61475, 'Pivot.M.Woodie.S3': 151.885, 'Pivot.M.Woodie.S2': 156.6975, 'Pivot.M.Woodie.S1': 166.375, 'Pivot.M.Woodie.Middle': 171.1875, 'Pivot.M.Woodie.R1': 180.865, 'Pivot.M.Woodie.R2': 185.6775, 'Pivot.M.Woodie.R3': 195.35500000000002, 'Pivot.M.Demark.S1': 167.57, 'Pivot.M.Demark.Middle': 171.785, 'Pivot.M.Demark.R1': 182.06, 'open': 175.48, 'P.SAR': 173.4447194701935, 'BB.lower': 172.34965462968765, 'BB.upper': 177.21434537031186, 'AO[2]': 1.792823529411379, 'volume': 32214.091, 'change': 0.15955325089748768, 'low': 175.23, 'high': 175.98}
+2025-07-18 02:09:16,905 | INFO | MA: {'RECOMMENDATION': 'STRONG_BUY', 'BUY': 14, 'SELL': 0, 'NEUTRAL': 1, 'COMPUTE': {'EMA10': 'BUY', 'SMA10': 'BUY', 'EMA20': 'BUY', 'SMA20': 'BUY', 'EMA30': 'BUY', 'SMA30': 'BUY', 'EMA50': 'BUY', 'SMA50': 'BUY', 'EMA100': 'BUY', 'SMA100': 'BUY', 'EMA200': 'BUY', 'SMA200': 'BUY', 'Ichimoku': 'NEUTRAL', 'VWMA': 'BUY', 'HullMA': 'BUY'}}
+2025-07-18 02:09:16,905 | INFO | [BINANCE] Запрос OHLCV: SOLUSDT 15m limit=300
+2025-07-18 02:09:17,367 | INFO | [BINANCE] Получено 300 свечей для SOLUSDT 15m
+2025-07-18 02:09:21,440 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:09:21,460 | INFO | [BINANCE] Запрос OHLCV: SOLUSDT 15m limit=300
+2025-07-18 02:09:21,859 | INFO | [BINANCE] Получено 300 свечей для SOLUSDT 15m
+2025-07-18 02:09:21,861 | INFO | [CHART] generate_chart: symbol=SOLUSDT, interval=15m, output_path=chart_15m_1099411068_1752793761.png, levels=[171.34, 177.4]
+2025-07-18 02:09:21,861 | INFO | [BINANCE] Запрос OHLCV: SOLUSDT 15m limit=100
+2025-07-18 02:09:22,243 | INFO | [BINANCE] Получено 100 свечей для SOLUSDT 15m
+2025-07-18 02:09:22,243 | INFO | [BINANCE] Запрос OHLCV: SOLUSDT 1h limit=100
+2025-07-18 02:09:22,629 | INFO | [BINANCE] Получено 100 свечей для SOLUSDT 1h
+2025-07-18 02:09:23,094 | INFO | [CHART] Переименован chart_SOLUSDT.png -> chart_15m_1099411068_1752793761.png
+2025-07-18 02:09:23,094 | INFO | [CHART] Итоговый путь графика: chart_15m_1099411068_1752793761.png
+2025-07-18 02:09:23,374 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:10:43,665 | INFO | Stop polling...
+2025-07-18 02:10:43,668 | WARNING | Goodbye!
