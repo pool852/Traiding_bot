@@ -10320,3 +10320,193 @@ asyncio.exceptions.TimeoutError
 2025-07-18 02:40:31,859 | INFO | [CHART] Переименован chart_BTCUSDT.png -> chart_15m_1099411068_1752795630.png
 2025-07-18 02:40:31,859 | INFO | [CHART] Итоговый путь графика: chart_15m_1099411068_1752795630.png
 2025-07-18 02:40:32,274 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:42:26,025 | ERROR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-18 02:42:36,315 | ERROR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-18 02:42:46,533 | ERROR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-18 02:42:56,697 | ERROR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-18 02:43:06,834 | ERROR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-18 02:43:16,987 | ERROR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/Users/ilasenikov/Desktop/бот с прогнозами на торговые валюты /.venv/lib/python3.9/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-18 02:43:29,720 | INFO | Stop polling...
+2025-07-18 02:43:29,727 | WARNING | Goodbye!
+2025-07-18 02:43:33,043 | INFO | [STARTUP] Бот запущен
+2025-07-18 02:43:33,254 | INFO | Bot: Техно Будда [@tehnobudda_bot]
+2025-07-18 02:43:33,355 | WARNING | Updates were skipped successfully.
+2025-07-18 02:43:33,355 | INFO | Start polling.
+2025-07-18 02:43:37,035 | INFO | [START] Пользователь 1099411068 начал работу
+2025-07-18 02:43:39,263 | INFO | [SYMBOL] Пользователь 1099411068 выбрал BTCUSDT
+2025-07-18 02:43:40,795 | INFO | [ANALYSIS] Запрос анализа BTCUSDT @ 15m
+2025-07-18 02:43:41,080 | INFO | INDICATORS: {'Recommend.Other': -0.18181818181818182, 'Recommend.All': -0.1575757575757576, 'Recommend.MA': -0.13333333333333333, 'RSI': 46.368708017756234, 'RSI[1]': 50.45451573046771, 'Stoch.K': 42.603763845494036, 'Stoch.D': 50.2240416694118, 'Stoch.K[1]': 16.376548968378582, 'Stoch.D[1]': 30.397148534902524, 'CCI20': -52.54944984239776, 'CCI20[1]': -17.778989415420295, 'ADX': 21.653019618903834, 'ADX+DI': 24.163774999276946, 'ADX-DI': 22.86225539294029, 'ADX+DI[1]': 25.818868058135205, 'ADX-DI[1]': 21.168966910227212, 'AO': 408.9758529411629, 'AO[1]': 615.4162647058693, 'Mom': -744.1600000000035, 'Mom[1]': 179.19000000000233, 'MACD.macd': 200.96803730499232, 'MACD.signal': 306.4336695067329, 'Rec.Stoch.RSI': 0, 'Stoch.RSI.K': 11.78127921917364, 'Rec.WR': 0, 'W.R': -70.83752249474082, 'Rec.BBPower': 0, 'BBPower': -643.3655963062338, 'Rec.UO': 0, 'UO': 44.492997158375466, 'close': 119321.83, 'EMA5': 119666.04465201101, 'SMA5': 119720.952, 'EMA10': 119786.2339512514, 'SMA10': 120089.94200000018, 'EMA20': 119685.08679882032, 'SMA20': 119749.89849999994, 'EMA30': 119517.84572628951, 'SMA30': 119489.10966666655, 'EMA50': 119262.33644361065, 'SMA50': 118997.10840000014, 'EMA100': 118959.87631068125, 'SMA100': 118731.40579999992, 'EMA200': 118739.87426426797, 'SMA200': 118624.23259999987, 'Rec.Ichimoku': 0, 'Ichimoku.BLine': 119691.34, 'Rec.VWMA': -1, 'VWMA': 119970.15938715845, 'Rec.HullMA9': -1, 'HullMA9': 119405.83829629631, 'Pivot.M.Classic.S3': 112477.42, 'Pivot.M.Classic.S2': 115523.97, 'Pivot.M.Classic.S1': 117077.20000000001, 'Pivot.M.Classic.Middle': 118570.52, 'Pivot.M.Classic.R1': 120123.75000000001, 'Pivot.M.Classic.R2': 121617.07, 'Pivot.M.Classic.R3': 124663.62000000001, 'Pivot.M.Fibonacci.S3': 115523.97, 'Pivot.M.Fibonacci.S2': 116687.7521, 'Pivot.M.Fibonacci.S1': 117406.73790000001, 'Pivot.M.Fibonacci.Middle': 118570.52, 'Pivot.M.Fibonacci.R1': 119734.3021, 'Pivot.M.Fibonacci.R2': 120453.28790000001, 'Pivot.M.Fibonacci.R3': 121617.07, 'Pivot.M.Camarilla.S3': 117792.62874999999, 'Pivot.M.Camarilla.S2': 118071.89583333333, 'Pivot.M.Camarilla.S1': 118351.16291666665, 'Pivot.M.Camarilla.Middle': 118570.52, 'Pivot.M.Camarilla.R1': 118909.69708333333, 'Pivot.M.Camarilla.R2': 119188.96416666666, 'Pivot.M.Camarilla.R3': 119468.23125, 'Pivot.M.Woodie.S3': 114060.615, 'Pivot.M.Woodie.S2': 115538.9525, 'Pivot.M.Woodie.S1': 117107.16500000001, 'Pivot.M.Woodie.Middle': 118585.5025, 'Pivot.M.Woodie.R1': 120153.71500000001, 'Pivot.M.Woodie.R2': 121632.0525, 'Pivot.M.Woodie.R3': 123200.26500000001, 'Pivot.M.Demark.S1': 117823.85999999999, 'Pivot.M.Demark.Middle': 118943.84999999999, 'Pivot.M.Demark.R1': 120870.40999999999, 'open': 119616.05, 'P.SAR': 119211.40482841666, 'BB.lower': 118664.72041285141, 'BB.upper': 120835.07658714846, 'AO[2]': 766.2693529411481, 'volume': 105.46048, 'change': -0.24597033592064038, 'low': 119250.03, 'high': 119663.26}
+2025-07-18 02:43:41,080 | INFO | MA: {'RECOMMENDATION': 'SELL', 'BUY': 6, 'SELL': 8, 'NEUTRAL': 1, 'COMPUTE': {'EMA10': 'SELL', 'SMA10': 'SELL', 'EMA20': 'SELL', 'SMA20': 'SELL', 'EMA30': 'SELL', 'SMA30': 'SELL', 'EMA50': 'BUY', 'SMA50': 'BUY', 'EMA100': 'BUY', 'SMA100': 'BUY', 'EMA200': 'BUY', 'SMA200': 'BUY', 'Ichimoku': 'NEUTRAL', 'VWMA': 'SELL', 'HullMA': 'SELL'}}
+2025-07-18 02:43:41,080 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 15m limit=300
+2025-07-18 02:43:41,534 | INFO | [BINANCE] Получено 300 свечей для BTCUSDT 15m
+2025-07-18 02:43:43,486 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:43:43,498 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 15m limit=300
+2025-07-18 02:43:43,888 | INFO | [BINANCE] Получено 300 свечей для BTCUSDT 15m
+2025-07-18 02:43:43,890 | INFO | [CHART] generate_chart: symbol=BTCUSDT, interval=15m, output_path=chart_15m_1099411068_1752795823.png, levels=[118383.97, 120998.71]
+2025-07-18 02:43:43,890 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 15m limit=100
+2025-07-18 02:43:44,280 | INFO | [BINANCE] Получено 100 свечей для BTCUSDT 15m
+2025-07-18 02:43:44,280 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 1h limit=100
+2025-07-18 02:43:44,659 | INFO | [BINANCE] Получено 100 свечей для BTCUSDT 1h
+2025-07-18 02:43:45,085 | INFO | [CHART] Переименован chart_BTCUSDT.png -> chart_15m_1099411068_1752795823.png
+2025-07-18 02:43:45,086 | INFO | [CHART] Итоговый путь графика: chart_15m_1099411068_1752795823.png
+2025-07-18 02:43:45,812 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:43:49,291 | INFO | [ANALYSIS] Запрос анализа BTCUSDT @ 1h
+2025-07-18 02:43:49,511 | INFO | INDICATORS: {'Recommend.Other': 0, 'Recommend.All': 0.4, 'Recommend.MA': 0.8, 'RSI': 53.84255275451644, 'RSI[1]': 58.42793027459176, 'Stoch.K': 65.81799308348884, 'Stoch.D': 71.9163768133596, 'Stoch.K[1]': 69.85310368507446, 'Stoch.D[1]': 73.56331252324323, 'CCI20': 91.97929821597297, 'CCI20[1]': 173.37230102813314, 'ADX': 17.25051222046083, 'ADX+DI': 27.902693247385372, 'ADX-DI': 16.468097903701484, 'ADX+DI[1]': 29.5278839866409, 'ADX-DI[1]': 15.246011387784655, 'AO': 793.186882352762, 'AO[1]': 809.3369411762978, 'Mom': 1039.8399999999965, 'Mom[1]': 1899.6300000000047, 'MACD.macd': 292.90870326761797, 'MACD.signal': 179.25081888570472, 'Rec.Stoch.RSI': 0, 'Stoch.RSI.K': 75.43648468077096, 'Rec.WR': 0, 'W.R': -47.3008118156125, 'Rec.BBPower': 0, 'BBPower': 747.010619680339, 'Rec.UO': 0, 'UO': 51.77107924198842, 'close': 119333.78, 'EMA5': 119513.71855461723, 'SMA5': 119551.45000000004, 'EMA10': 119296.63390459272, 'SMA10': 119281.02899999991, 'EMA20': 119025.09290879894, 'SMA20': 118811.56650000016, 'EMA30': 118881.39460812637, 'SMA30': 118832.21533333333, 'EMA50': 118728.44341823105, 'SMA50': 118647.11259999996, 'EMA100': 118330.61887011895, 'SMA100': 118864.67790000002, 'EMA200': 116797.59130137505, 'SMA200': 117336.8318, 'Rec.Ichimoku': 0, 'Ichimoku.BLine': 119226.14000000001, 'Rec.VWMA': 1, 'VWMA': 118940.41102023516, 'Rec.HullMA9': -1, 'HullMA9': 119928.56877777778, 'Pivot.M.Classic.S3': 91217.87666666669, 'Pivot.M.Classic.S2': 103276.30666666669, 'Pivot.M.Classic.S1': 111181.47333333336, 'Pivot.M.Classic.Middle': 115334.73666666668, 'Pivot.M.Classic.R1': 123239.90333333335, 'Pivot.M.Classic.R2': 127393.16666666667, 'Pivot.M.Classic.R3': 139451.59666666668, 'Pivot.M.Fibonacci.S3': 103276.30666666669, 'Pivot.M.Fibonacci.S2': 107882.62692666668, 'Pivot.M.Fibonacci.S1': 110728.41640666669, 'Pivot.M.Fibonacci.Middle': 115334.73666666668, 'Pivot.M.Fibonacci.R1': 119941.05692666667, 'Pivot.M.Fibonacci.R2': 122786.84640666668, 'Pivot.M.Fibonacci.R3': 127393.16666666667, 'Pivot.M.Camarilla.S3': 115770.57175, 'Pivot.M.Camarilla.S2': 116875.92783333334, 'Pivot.M.Camarilla.S1': 117981.28391666667, 'Pivot.M.Camarilla.Middle': 115334.73666666668, 'Pivot.M.Camarilla.R1': 120191.99608333333, 'Pivot.M.Camarilla.R2': 121297.35216666666, 'Pivot.M.Camarilla.R3': 122402.70825, 'Pivot.M.Woodie.S3': 100999.005, 'Pivot.M.Woodie.S2': 104214.2875, 'Pivot.M.Woodie.S1': 113057.435, 'Pivot.M.Woodie.Middle': 116272.7175, 'Pivot.M.Woodie.R1': 125115.86499999999, 'Pivot.M.Woodie.R2': 128331.14749999999, 'Pivot.M.Woodie.R3': 137174.29499999998, 'Pivot.M.Demark.S1': 113258.10500000001, 'Pivot.M.Demark.Middle': 116373.0525, 'Pivot.M.Demark.R1': 125316.535, 'open': 119766.7, 'P.SAR': 118333.71433766578, 'BB.lower': 117593.98479664481, 'BB.upper': 120029.14820335551, 'AO[2]': 611.3164117645356, 'volume': 503.83255, 'change': -0.36147774285526213, 'low': 119250.03, 'high': 119879.35}
+2025-07-18 02:43:49,511 | INFO | MA: {'RECOMMENDATION': 'STRONG_BUY', 'BUY': 13, 'SELL': 1, 'NEUTRAL': 1, 'COMPUTE': {'EMA10': 'BUY', 'SMA10': 'BUY', 'EMA20': 'BUY', 'SMA20': 'BUY', 'EMA30': 'BUY', 'SMA30': 'BUY', 'EMA50': 'BUY', 'SMA50': 'BUY', 'EMA100': 'BUY', 'SMA100': 'BUY', 'EMA200': 'BUY', 'SMA200': 'BUY', 'Ichimoku': 'NEUTRAL', 'VWMA': 'BUY', 'HullMA': 'SELL'}}
+2025-07-18 02:43:49,511 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 1h limit=300
+2025-07-18 02:43:49,983 | INFO | [BINANCE] Получено 300 свечей для BTCUSDT 1h
+2025-07-18 02:43:51,547 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:43:51,554 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 1h limit=300
+2025-07-18 02:43:51,944 | INFO | [BINANCE] Получено 300 свечей для BTCUSDT 1h
+2025-07-18 02:43:51,945 | INFO | [CHART] generate_chart: symbol=BTCUSDT, interval=1h, output_path=chart_1h_1099411068_1752795831.png, levels=[117453.57, 120998.71]
+2025-07-18 02:43:51,945 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 1h limit=100
+2025-07-18 02:43:52,320 | INFO | [BINANCE] Получено 100 свечей для BTCUSDT 1h
+2025-07-18 02:43:52,512 | INFO | [CHART] Переименован chart_BTCUSDT.png -> chart_1h_1099411068_1752795831.png
+2025-07-18 02:43:52,512 | INFO | [CHART] Итоговый путь графика: chart_1h_1099411068_1752795831.png
+2025-07-18 02:43:53,186 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:43:56,381 | INFO | [ANALYSIS] Запрос анализа BTCUSDT @ 4h
+2025-07-18 02:43:56,596 | INFO | INDICATORS: {'Recommend.Other': 0, 'Recommend.All': 0.4666666666666667, 'Recommend.MA': 0.9333333333333333, 'RSI': 58.53299349689149, 'RSI[1]': 56.38550388421882, 'Stoch.K': 71.24421903170075, 'Stoch.D': 66.38520160190781, 'Stoch.K[1]': 46.07404247661105, 'Stoch.D[1]': 42.17155991116247, 'CCI20': 102.1125103362347, 'CCI20[1]': 53.70713290033406, 'ADX': 27.955014826484486, 'ADX+DI': 24.826689094858917, 'ADX-DI': 12.178315562670084, 'ADX+DI[1]': 22.32049865384102, 'ADX-DI[1]': 13.87836707383663, 'AO': 213.75349999971513, 'AO[1]': 15.865323529127636, 'Mom': 1144.5299999999988, 'Mom[1]': 1476.9900000000052, 'MACD.macd': 430.4765363401384, 'MACD.signal': 460.1084541846752, 'Rec.Stoch.RSI': 0, 'Stoch.RSI.K': 86.60749022791875, 'Rec.WR': 0, 'W.R': -33.434612001622725, 'Rec.BBPower': 0, 'BBPower': 2210.6216324785055, 'Rec.UO': 0, 'UO': 41.133151297676505, 'close': 119333.78, 'EMA5': 118871.37498212031, 'SMA5': 118696.43599999996, 'EMA10': 118656.50373600803, 'SMA10': 118733.6389999999, 'EMA20': 118412.95424064217, 'SMA20': 118219.8030000001, 'EMA30': 117976.22061677162, 'SMA30': 118659.07933333337, 'EMA50': 116745.04627963348, 'SMA50': 117339.1601999999, 'EMA100': 114016.75329958297, 'SMA100': 112820.54849999992, 'EMA200': 110839.2278959887, 'SMA200': 109179.9761, 'Rec.Ichimoku': 0, 'Ichimoku.BLine': 119477.45999999999, 'Rec.VWMA': 1, 'VWMA': 117928.90370197686, 'Rec.HullMA9': 1, 'HullMA9': 118930.16537037033, 'Pivot.M.Classic.S3': 91217.87666666669, 'Pivot.M.Classic.S2': 103276.30666666669, 'Pivot.M.Classic.S1': 111181.47333333336, 'Pivot.M.Classic.Middle': 115334.73666666668, 'Pivot.M.Classic.R1': 123239.90333333335, 'Pivot.M.Classic.R2': 127393.16666666667, 'Pivot.M.Classic.R3': 139451.59666666668, 'Pivot.M.Fibonacci.S3': 103276.30666666669, 'Pivot.M.Fibonacci.S2': 107882.62692666668, 'Pivot.M.Fibonacci.S1': 110728.41640666669, 'Pivot.M.Fibonacci.Middle': 115334.73666666668, 'Pivot.M.Fibonacci.R1': 119941.05692666667, 'Pivot.M.Fibonacci.R2': 122786.84640666668, 'Pivot.M.Fibonacci.R3': 127393.16666666667, 'Pivot.M.Camarilla.S3': 115770.57175, 'Pivot.M.Camarilla.S2': 116875.92783333334, 'Pivot.M.Camarilla.S1': 117981.28391666667, 'Pivot.M.Camarilla.Middle': 115334.73666666668, 'Pivot.M.Camarilla.R1': 120191.99608333333, 'Pivot.M.Camarilla.R2': 121297.35216666666, 'Pivot.M.Camarilla.R3': 122402.70825, 'Pivot.M.Woodie.S3': 100999.005, 'Pivot.M.Woodie.S2': 104214.2875, 'Pivot.M.Woodie.S1': 113057.435, 'Pivot.M.Woodie.Middle': 116272.7175, 'Pivot.M.Woodie.R1': 125115.86499999999, 'Pivot.M.Woodie.R2': 128331.14749999999, 'Pivot.M.Woodie.R3': 137174.29499999998, 'Pivot.M.Demark.S1': 113258.10500000001, 'Pivot.M.Demark.Middle': 116373.0525, 'Pivot.M.Demark.R1': 125316.535, 'open': 118959.66, 'P.SAR': 117453.57, 'BB.lower': 116125.12055689319, 'BB.upper': 120314.48544310701, 'AO[2]': 90.30191176442895, 'volume': 3655.36732, 'change': 0.314493165162035, 'low': 118383.97, 'high': 120998.71}
+2025-07-18 02:43:56,597 | INFO | MA: {'RECOMMENDATION': 'STRONG_BUY', 'BUY': 14, 'SELL': 0, 'NEUTRAL': 1, 'COMPUTE': {'EMA10': 'BUY', 'SMA10': 'BUY', 'EMA20': 'BUY', 'SMA20': 'BUY', 'EMA30': 'BUY', 'SMA30': 'BUY', 'EMA50': 'BUY', 'SMA50': 'BUY', 'EMA100': 'BUY', 'SMA100': 'BUY', 'EMA200': 'BUY', 'SMA200': 'BUY', 'Ichimoku': 'NEUTRAL', 'VWMA': 'BUY', 'HullMA': 'BUY'}}
+2025-07-18 02:43:56,597 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 4h limit=300
+2025-07-18 02:43:56,985 | INFO | [BINANCE] Получено 300 свечей для BTCUSDT 4h
+2025-07-18 02:43:58,791 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:43:58,797 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 4h limit=300
+2025-07-18 02:43:59,189 | INFO | [BINANCE] Получено 300 свечей для BTCUSDT 4h
+2025-07-18 02:43:59,190 | INFO | [CHART] generate_chart: symbol=BTCUSDT, interval=4h, output_path=chart_4h_1099411068_1752795839.png, levels=[115736.92, 120998.71]
+2025-07-18 02:43:59,190 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 4h limit=100
+2025-07-18 02:43:59,566 | INFO | [BINANCE] Получено 100 свечей для BTCUSDT 4h
+2025-07-18 02:43:59,567 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 1h limit=100
+2025-07-18 02:44:00,037 | INFO | [BINANCE] Получено 100 свечей для BTCUSDT 1h
+2025-07-18 02:44:00,292 | INFO | [CHART] Переименован chart_BTCUSDT.png -> chart_4h_1099411068_1752795839.png
+2025-07-18 02:44:00,292 | INFO | [CHART] Итоговый путь графика: chart_4h_1099411068_1752795839.png
+2025-07-18 02:44:00,814 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:44:09,623 | INFO | [ANALYSIS] Запрос анализа BTCUSDT @ 15m
+2025-07-18 02:44:09,854 | INFO | INDICATORS: {'Recommend.Other': -0.18181818181818182, 'Recommend.All': -0.1575757575757576, 'Recommend.MA': -0.13333333333333333, 'RSI': 46.930989877168706, 'RSI[1]': 50.45451573046771, 'Stoch.K': 43.216719126372006, 'Stoch.D': 50.428360096371115, 'Stoch.K[1]': 16.376548968378582, 'Stoch.D[1]': 30.397148534902524, 'CCI20': -50.42841076337147, 'CCI20[1]': -17.778989415420295, 'ADX': 21.653019618903834, 'ADX+DI': 24.163774999276946, 'ADX-DI': 22.86225539294029, 'ADX+DI[1]': 25.818868058135205, 'ADX-DI[1]': 21.168966910227212, 'AO': 408.9758529411629, 'AO[1]': 615.4162647058693, 'Mom': -700.6300000000047, 'Mom[1]': 179.19000000000233, 'MACD.macd': 204.44051593745826, 'MACD.signal': 307.12816523322607, 'Rec.Stoch.RSI': 0, 'Stoch.RSI.K': 11.78127921917364, 'Rec.WR': 0, 'W.R': -68.9986566521069, 'Rec.BBPower': 0, 'BBPower': -655.8027391633805, 'Rec.UO': 0, 'UO': 45.5014008998417, 'close': 119365.36, 'EMA5': 119680.55465201102, 'SMA5': 119729.65800000001, 'EMA10': 119794.14849670595, 'SMA10': 120094.29500000019, 'EMA20': 119689.23251310604, 'SMA20': 119752.07499999992, 'EMA30': 119520.65411338628, 'SMA30': 119490.56066666657, 'EMA50': 119264.04350243417, 'SMA50': 118997.97900000014, 'EMA100': 118960.73829087928, 'SMA100': 118731.84109999993, 'EMA200': 118740.30739859633, 'SMA200': 118624.45024999988, 'Rec.Ichimoku': 0, 'Ichimoku.BLine': 119691.34, 'Rec.VWMA': -1, 'VWMA': 119970.73158123785, 'Rec.HullMA9': -1, 'HullMA9': 119418.8972962963, 'Pivot.M.Classic.S3': 112477.42, 'Pivot.M.Classic.S2': 115523.97, 'Pivot.M.Classic.S1': 117077.20000000001, 'Pivot.M.Classic.Middle': 118570.52, 'Pivot.M.Classic.R1': 120123.75000000001, 'Pivot.M.Classic.R2': 121617.07, 'Pivot.M.Classic.R3': 124663.62000000001, 'Pivot.M.Fibonacci.S3': 115523.97, 'Pivot.M.Fibonacci.S2': 116687.7521, 'Pivot.M.Fibonacci.S1': 117406.73790000001, 'Pivot.M.Fibonacci.Middle': 118570.52, 'Pivot.M.Fibonacci.R1': 119734.3021, 'Pivot.M.Fibonacci.R2': 120453.28790000001, 'Pivot.M.Fibonacci.R3': 121617.07, 'Pivot.M.Camarilla.S3': 117792.62874999999, 'Pivot.M.Camarilla.S2': 118071.89583333333, 'Pivot.M.Camarilla.S1': 118351.16291666665, 'Pivot.M.Camarilla.Middle': 118570.52, 'Pivot.M.Camarilla.R1': 118909.69708333333, 'Pivot.M.Camarilla.R2': 119188.96416666666, 'Pivot.M.Camarilla.R3': 119468.23125, 'Pivot.M.Woodie.S3': 114060.615, 'Pivot.M.Woodie.S2': 115538.9525, 'Pivot.M.Woodie.S1': 117107.16500000001, 'Pivot.M.Woodie.Middle': 118585.5025, 'Pivot.M.Woodie.R1': 120153.71500000001, 'Pivot.M.Woodie.R2': 121632.0525, 'Pivot.M.Woodie.R3': 123200.26500000001, 'Pivot.M.Demark.S1': 117823.85999999999, 'Pivot.M.Demark.Middle': 118943.84999999999, 'Pivot.M.Demark.R1': 120870.40999999999, 'open': 119616.05, 'P.SAR': 119211.40482841666, 'BB.lower': 118670.1702095135, 'BB.upper': 120833.97979048635, 'AO[2]': 766.2693529411481, 'volume': 108.88993, 'change': -0.20957889848394287, 'low': 119250.03, 'high': 119663.26}
+2025-07-18 02:44:09,855 | INFO | MA: {'RECOMMENDATION': 'SELL', 'BUY': 6, 'SELL': 8, 'NEUTRAL': 1, 'COMPUTE': {'EMA10': 'SELL', 'SMA10': 'SELL', 'EMA20': 'SELL', 'SMA20': 'SELL', 'EMA30': 'SELL', 'SMA30': 'SELL', 'EMA50': 'BUY', 'SMA50': 'BUY', 'EMA100': 'BUY', 'SMA100': 'BUY', 'EMA200': 'BUY', 'SMA200': 'BUY', 'Ichimoku': 'NEUTRAL', 'VWMA': 'SELL', 'HullMA': 'SELL'}}
+2025-07-18 02:44:09,855 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 15m limit=300
+2025-07-18 02:44:10,251 | INFO | [BINANCE] Получено 300 свечей для BTCUSDT 15m
+2025-07-18 02:44:10,304 | INFO | [ANALYSIS] Запрос анализа BTCUSDT @ 1h
+2025-07-18 02:44:10,577 | INFO | INDICATORS: {'Recommend.Other': 0, 'Recommend.All': 0.4, 'Recommend.MA': 0.8, 'RSI': 53.95629498453471, 'RSI[1]': 58.42793027459176, 'Stoch.K': 65.93035347922307, 'Stoch.D': 71.95383027860436, 'Stoch.K[1]': 69.85310368507446, 'Stoch.D[1]': 73.56331252324323, 'CCI20': 92.4275812859719, 'CCI20[1]': 173.37230102813314, 'ADX': 17.25051222046083, 'ADX+DI': 27.902693247385372, 'ADX-DI': 16.468097903701484, 'ADX+DI[1]': 29.5278839866409, 'ADX-DI[1]': 15.246011387784655, 'AO': 793.186882352762, 'AO[1]': 809.3369411762978, 'Mom': 1051.7899999999936, 'Mom[1]': 1899.6300000000047, 'MACD.macd': 293.86197962090955, 'MACD.signal': 179.44147415636303, 'Rec.Stoch.RSI': 0, 'Stoch.RSI.K': 75.60978674374131, 'Rec.WR': 0, 'W.R': -46.96373062840982, 'Rec.BBPower': 0, 'BBPower': 743.5963339660666, 'Rec.UO': 0, 'UO': 51.90713574295944, 'close': 119333.78, 'EMA5': 119517.70188795055, 'SMA5': 119553.84000000004, 'EMA10': 119298.80663186545, 'SMA10': 119282.2239999999, 'EMA20': 119026.23100403702, 'SMA20': 118812.16400000018, 'EMA30': 118882.1655758683, 'SMA30': 118832.61366666666, 'EMA50': 118728.91204568202, 'SMA50': 118647.35159999997, 'EMA100': 118330.85550378231, 'SMA100': 118864.79740000002, 'EMA200': 116797.71020684768, 'SMA200': 117336.89155, 'Rec.Ichimoku': 0, 'Ichimoku.BLine': 119226.14000000001, 'Rec.VWMA': 1, 'VWMA': 118940.90946990754, 'Rec.HullMA9': -1, 'HullMA9': 119932.1537777778, 'Pivot.M.Classic.S3': 91217.87666666669, 'Pivot.M.Classic.S2': 103276.30666666669, 'Pivot.M.Classic.S1': 111181.47333333336, 'Pivot.M.Classic.Middle': 115334.73666666668, 'Pivot.M.Classic.R1': 123239.90333333335, 'Pivot.M.Classic.R2': 127393.16666666667, 'Pivot.M.Classic.R3': 139451.59666666668, 'Pivot.M.Fibonacci.S3': 103276.30666666669, 'Pivot.M.Fibonacci.S2': 107882.62692666668, 'Pivot.M.Fibonacci.S1': 110728.41640666669, 'Pivot.M.Fibonacci.Middle': 115334.73666666668, 'Pivot.M.Fibonacci.R1': 119941.05692666667, 'Pivot.M.Fibonacci.R2': 122786.84640666668, 'Pivot.M.Fibonacci.R3': 127393.16666666667, 'Pivot.M.Camarilla.S3': 115770.57175, 'Pivot.M.Camarilla.S2': 116875.92783333334, 'Pivot.M.Camarilla.S1': 117981.28391666667, 'Pivot.M.Camarilla.Middle': 115334.73666666668, 'Pivot.M.Camarilla.R1': 120191.99608333333, 'Pivot.M.Camarilla.R2': 121297.35216666666, 'Pivot.M.Camarilla.R3': 122402.70825, 'Pivot.M.Woodie.S3': 100999.005, 'Pivot.M.Woodie.S2': 104214.2875, 'Pivot.M.Woodie.S1': 113057.435, 'Pivot.M.Woodie.Middle': 116272.7175, 'Pivot.M.Woodie.R1': 125115.86499999999, 'Pivot.M.Woodie.R2': 128331.14749999999, 'Pivot.M.Woodie.R3': 137174.29499999998, 'Pivot.M.Demark.S1': 113258.10500000001, 'Pivot.M.Demark.Middle': 116373.0525, 'Pivot.M.Demark.R1': 125316.535, 'open': 119766.7, 'P.SAR': 118333.71433766578, 'BB.lower': 117593.56997558853, 'BB.upper': 120030.75802441183, 'AO[2]': 611.3164117645356, 'volume': 503.83255, 'change': -0.36147774285526213, 'low': 119250.03, 'high': 119879.35}
+2025-07-18 02:44:10,579 | INFO | MA: {'RECOMMENDATION': 'STRONG_BUY', 'BUY': 13, 'SELL': 1, 'NEUTRAL': 1, 'COMPUTE': {'EMA10': 'BUY', 'SMA10': 'BUY', 'EMA20': 'BUY', 'SMA20': 'BUY', 'EMA30': 'BUY', 'SMA30': 'BUY', 'EMA50': 'BUY', 'SMA50': 'BUY', 'EMA100': 'BUY', 'SMA100': 'BUY', 'EMA200': 'BUY', 'SMA200': 'BUY', 'Ichimoku': 'NEUTRAL', 'VWMA': 'BUY', 'HullMA': 'SELL'}}
+2025-07-18 02:44:10,579 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 1h limit=300
+2025-07-18 02:44:11,208 | INFO | [BINANCE] Получено 300 свечей для BTCUSDT 1h
+2025-07-18 02:44:11,260 | INFO | [ANALYSIS] Запрос анализа BTCUSDT @ 4h
+2025-07-18 02:44:11,478 | INFO | INDICATORS: {'Recommend.Other': 0, 'Recommend.All': 0.4666666666666667, 'Recommend.MA': 0.9333333333333333, 'RSI': 58.53299349689149, 'RSI[1]': 56.38550388421882, 'Stoch.K': 71.24421903170075, 'Stoch.D': 66.38520160190781, 'Stoch.K[1]': 46.07404247661105, 'Stoch.D[1]': 42.17155991116247, 'CCI20': 102.1125103362347, 'CCI20[1]': 53.70713290033406, 'ADX': 27.955014826484486, 'ADX+DI': 24.826689094858917, 'ADX-DI': 12.178315562670084, 'ADX+DI[1]': 22.32049865384102, 'ADX-DI[1]': 13.87836707383663, 'AO': 213.75349999971513, 'AO[1]': 15.865323529127636, 'Mom': 1144.5299999999988, 'Mom[1]': 1476.9900000000052, 'MACD.macd': 430.4765363401384, 'MACD.signal': 460.1084541846752, 'Rec.Stoch.RSI': 0, 'Stoch.RSI.K': 86.60749022791875, 'Rec.WR': 0, 'W.R': -33.434612001622725, 'Rec.BBPower': 0, 'BBPower': 2210.6216324785055, 'Rec.UO': 0, 'UO': 41.133151297676505, 'close': 119333.78, 'EMA5': 118871.37498212031, 'SMA5': 118696.43599999996, 'EMA10': 118656.50373600803, 'SMA10': 118733.6389999999, 'EMA20': 118412.95424064217, 'SMA20': 118219.8030000001, 'EMA30': 117976.22061677162, 'SMA30': 118659.07933333337, 'EMA50': 116745.04627963348, 'SMA50': 117339.1601999999, 'EMA100': 114016.75329958297, 'SMA100': 112820.54849999992, 'EMA200': 110839.2278959887, 'SMA200': 109179.9761, 'Rec.Ichimoku': 0, 'Ichimoku.BLine': 119477.45999999999, 'Rec.VWMA': 1, 'VWMA': 117928.90370197686, 'Rec.HullMA9': 1, 'HullMA9': 118930.16537037033, 'Pivot.M.Classic.S3': 91217.87666666669, 'Pivot.M.Classic.S2': 103276.30666666669, 'Pivot.M.Classic.S1': 111181.47333333336, 'Pivot.M.Classic.Middle': 115334.73666666668, 'Pivot.M.Classic.R1': 123239.90333333335, 'Pivot.M.Classic.R2': 127393.16666666667, 'Pivot.M.Classic.R3': 139451.59666666668, 'Pivot.M.Fibonacci.S3': 103276.30666666669, 'Pivot.M.Fibonacci.S2': 107882.62692666668, 'Pivot.M.Fibonacci.S1': 110728.41640666669, 'Pivot.M.Fibonacci.Middle': 115334.73666666668, 'Pivot.M.Fibonacci.R1': 119941.05692666667, 'Pivot.M.Fibonacci.R2': 122786.84640666668, 'Pivot.M.Fibonacci.R3': 127393.16666666667, 'Pivot.M.Camarilla.S3': 115770.57175, 'Pivot.M.Camarilla.S2': 116875.92783333334, 'Pivot.M.Camarilla.S1': 117981.28391666667, 'Pivot.M.Camarilla.Middle': 115334.73666666668, 'Pivot.M.Camarilla.R1': 120191.99608333333, 'Pivot.M.Camarilla.R2': 121297.35216666666, 'Pivot.M.Camarilla.R3': 122402.70825, 'Pivot.M.Woodie.S3': 100999.005, 'Pivot.M.Woodie.S2': 104214.2875, 'Pivot.M.Woodie.S1': 113057.435, 'Pivot.M.Woodie.Middle': 116272.7175, 'Pivot.M.Woodie.R1': 125115.86499999999, 'Pivot.M.Woodie.R2': 128331.14749999999, 'Pivot.M.Woodie.R3': 137174.29499999998, 'Pivot.M.Demark.S1': 113258.10500000001, 'Pivot.M.Demark.Middle': 116373.0525, 'Pivot.M.Demark.R1': 125316.535, 'open': 118959.66, 'P.SAR': 117453.57, 'BB.lower': 116125.12055689319, 'BB.upper': 120314.48544310701, 'AO[2]': 90.30191176442895, 'volume': 3655.36732, 'change': 0.314493165162035, 'low': 118383.97, 'high': 120998.71}
+2025-07-18 02:44:11,479 | INFO | MA: {'RECOMMENDATION': 'STRONG_BUY', 'BUY': 14, 'SELL': 0, 'NEUTRAL': 1, 'COMPUTE': {'EMA10': 'BUY', 'SMA10': 'BUY', 'EMA20': 'BUY', 'SMA20': 'BUY', 'EMA30': 'BUY', 'SMA30': 'BUY', 'EMA50': 'BUY', 'SMA50': 'BUY', 'EMA100': 'BUY', 'SMA100': 'BUY', 'EMA200': 'BUY', 'SMA200': 'BUY', 'Ichimoku': 'NEUTRAL', 'VWMA': 'BUY', 'HullMA': 'BUY'}}
+2025-07-18 02:44:11,480 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 4h limit=300
+2025-07-18 02:44:11,874 | INFO | [BINANCE] Получено 300 свечей для BTCUSDT 4h
+2025-07-18 02:44:12,345 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:44:13,121 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:44:13,613 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:44:13,614 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 15m limit=300
+2025-07-18 02:44:14,011 | INFO | [BINANCE] Получено 300 свечей для BTCUSDT 15m
+2025-07-18 02:44:14,011 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 1h limit=300
+2025-07-18 02:44:14,386 | INFO | [BINANCE] Получено 300 свечей для BTCUSDT 1h
+2025-07-18 02:44:14,387 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 4h limit=300
+2025-07-18 02:44:14,785 | INFO | [BINANCE] Получено 300 свечей для BTCUSDT 4h
+2025-07-18 02:44:14,787 | INFO | [CHART] generate_chart: symbol=BTCUSDT, interval=15m, output_path=chart_15m_1099411068_1752795854.png, levels=[118383.97, 120998.71]
+2025-07-18 02:44:14,787 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 15m limit=100
+2025-07-18 02:44:15,177 | INFO | [BINANCE] Получено 100 свечей для BTCUSDT 15m
+2025-07-18 02:44:15,178 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 1h limit=100
+2025-07-18 02:44:15,560 | INFO | [BINANCE] Получено 100 свечей для BTCUSDT 1h
+2025-07-18 02:44:15,899 | INFO | [CHART] Переименован chart_BTCUSDT.png -> chart_15m_1099411068_1752795854.png
+2025-07-18 02:44:15,900 | INFO | [CHART] Итоговый путь графика: chart_15m_1099411068_1752795854.png
+2025-07-18 02:44:15,900 | INFO | [CHART] generate_chart: symbol=BTCUSDT, interval=1h, output_path=chart_1h_1099411068_1752795855.png, levels=[117453.57, 120998.71]
+2025-07-18 02:44:15,900 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 1h limit=100
+2025-07-18 02:44:16,274 | INFO | [BINANCE] Получено 100 свечей для BTCUSDT 1h
+2025-07-18 02:44:16,449 | INFO | [CHART] Переименован chart_BTCUSDT.png -> chart_1h_1099411068_1752795855.png
+2025-07-18 02:44:16,449 | INFO | [CHART] Итоговый путь графика: chart_1h_1099411068_1752795855.png
+2025-07-18 02:44:16,450 | INFO | [CHART] generate_chart: symbol=BTCUSDT, interval=4h, output_path=chart_4h_1099411068_1752795856.png, levels=[115736.92, 120998.71]
+2025-07-18 02:44:16,450 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 4h limit=100
+2025-07-18 02:44:16,830 | INFO | [BINANCE] Получено 100 свечей для BTCUSDT 4h
+2025-07-18 02:44:16,830 | INFO | [BINANCE] Запрос OHLCV: BTCUSDT 1h limit=100
+2025-07-18 02:44:17,206 | INFO | [BINANCE] Получено 100 свечей для BTCUSDT 1h
+2025-07-18 02:44:17,629 | INFO | [CHART] Переименован chart_BTCUSDT.png -> chart_4h_1099411068_1752795856.png
+2025-07-18 02:44:17,630 | INFO | [CHART] Итоговый путь графика: chart_4h_1099411068_1752795856.png
+2025-07-18 02:44:22,637 | INFO | HTTP Request: POST https://api.together.xyz/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-18 02:45:39,295 | INFO | Stop polling...
+2025-07-18 02:45:39,297 | WARNING | Goodbye!

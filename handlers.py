@@ -443,8 +443,6 @@ async def format_analysis_block(symbol: str, tf: str, indicators: dict, short_co
             f"Trade volume: {indicators.get('volume', '-')}\n"
             f"Stoch RSI: {indicators.get('StochRSI', '-')}\n"
             f"EMA(50/100/200): {ema50} / {ema100} / {ema200}\n"
-            f"SuperTrend: {indicators.get('SuperTrend', '-')}\n"
-            f"PSAR: {indicators.get('PSAR', '-')}\n"
             f"Текущий тренд: {indicators.get('trend', '-')}"
         )
     indicators_block = build_indicators_block(symbol, indicators)
@@ -498,19 +496,7 @@ async def format_analysis_block(symbol: str, tf: str, indicators: dict, short_co
         elif isinstance(macd, str) and 'отрицательный' in macd.lower():
             sell_signals += 1
         
-        # SuperTrend
-        supertrend = indicators.get('SuperTrend', '')
-        if supertrend == 'BUY':
-            buy_signals += 1
-        elif supertrend == 'SELL':
-            sell_signals += 1
-        
-        # PSAR
-        psar = indicators.get('PSAR', '')
-        if psar == 'BUY':
-            buy_signals += 1
-        elif psar == 'SELL':
-            sell_signals += 1
+
         
         # Тренд
         trend = indicators.get('trend', '')
