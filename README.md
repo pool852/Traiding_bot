@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ### 4. Настройка переменных окружения
 Создайте файл `.env` в корневой папке:
 ```env
-BOT_TOKEN=7591442520:AAHGvz8XUV1ch-6_Lklhld1Loy-bU4mKnSk
+BOT_TOKEN=your_bot_token
 OPENAI_API_KEY=your_openai_api_key
 CHART_PATH=chart.png
 ```
