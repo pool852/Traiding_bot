@@ -1,5 +1,5 @@
 # Переменные окружения (содержат токены и ключи API)
-.env
+# .env
 .env.local
 .env.production
 .env.staging
